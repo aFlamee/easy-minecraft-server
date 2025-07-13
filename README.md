@@ -9,8 +9,8 @@ Spin up your own Minecraft server in minutes with Docker! Perfect for that spont
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repo-url>
-cd minecraftserver1
+git clone git@github.com:aFlamee/easy-minecraft-server.git
+cd easy-minecraft-server
 ```
 
 ### 2. Set RCON Password
