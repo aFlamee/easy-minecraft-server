@@ -1,0 +1,81 @@
+# Environment variables and secrets
+.env
+.env.local
+.env.production
+.env.staging
+*.secret
+rcon_password.secret
+
+# RCON configuration with passwords
+.rcon-cli.yaml
+rcon.yaml
+
+# Minecraft server files
+minecraft_server.*.jar
+server.jar
+server.properties.save
+*.save
+eula.txt
+libraries/
+versions/
+
+# Minecraft server data (usually too large for git)
+world/
+world_nether/
+world_the_end/
+*.dat
+*.dat_old
+*.lock
+
+# Server logs
+logs/
+*.log
+*.log.gz
+crash-reports/
+
+# Server cache and temporary files
+cache/
+temp/
+tmp/
+usercache.json
+usernamecache.json
+
+# Server configuration that might contain sensitive data
+ops.json
+whitelist.json
+banned-players.json
+banned-ips.json
+
+# Docker volumes and data
+data/
+minecraft-data/
+
+# Backup files
+backups/
+*.backup
+*.bak
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Plugin/mod development
+plugins/
+mods/
+*.jar.disabled
+
+# Performance monitoring
+*.hprof
+hs_err_pid*

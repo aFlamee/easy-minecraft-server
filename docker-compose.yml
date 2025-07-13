@@ -1,0 +1,17 @@
+services:
+  mc:
+    image: itzg/minecraft-server:2024.10.2-java21-alpine
+    environment:
+      - EULA=TRUE
+      - MEMORY=15G
+      - VERSION=1.21.5
+      - ENABLE_RCON=true
+      - RCON_PASSWORD=${RCON_PASSWORD}
+    ports:
+      - 999:25565 # For the Minecraft Server
+      - 25575:25575 # For the RCON Server 
+    tty: true
+    stdin_open: true
+    restart: unless-stopped
+    volumes:
+      - ./:/data
